@@ -91,4 +91,5 @@ SELECT
 FROM daily_internal i
 FULL OUTER JOIN daily_bank b ON i.transaction_date = b.settlement_date
 ORDER BY date DESC
+
 LIMIT 30;  -- Show last 30 days
